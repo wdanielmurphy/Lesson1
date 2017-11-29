@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title title="Hey, can a title have a tooltip?">
-Dan's Lesson 1:
-</title>
+<title">Dan's Lesson 1:</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
-<h1>Entering data into a listbox</h1>
+<h1 title="Oh man, can I have a tooltip?">Entering data into a listbox</h1>
 <p title="This paragraph actually says something">
 The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
 manipulated by various standard means.
