@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h3 title="Oh man, can I have a tooltip?">Entering data into a listbox</h3>
+<h3 title="Oh man, can I have a tooltip? Yes, I can.">Entering data into a listbox</h3>
 <p title="This paragraph actually says something">
 The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
 manipulated by various standard means.
