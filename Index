@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Dan's Lesson 1</title>
+<title title="Hey, can a title have a tooltip?">
+Dan's Lesson 1
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
