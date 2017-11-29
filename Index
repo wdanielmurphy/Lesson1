@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 title="Oh man, can I have a tooltip?">Entering data into a listbox</h1>
+<h3 title="Oh man, can I have a tooltip?">Entering data into a listbox</h3>
 <p title="This paragraph actually says something">
 The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
 manipulated by various standard means.
@@ -16,8 +16,7 @@ manipulated by various standard means.
 This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relavant information.
 </p>
 
-var x = document.createElement("INPUT");
-x.setAttribute("type", "text");
+<input type="text" id="myText" value="Enter ListItem">
 
 <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
