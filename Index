@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <title>Dan's Lesson 1</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,10 +7,14 @@
 <body>
 
 <h1>Entering data into a listbox</h1>
-<p>The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
-manipulated by various standard means.</p>
+<p title="This paragraph actually says something">
+The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
+manipulated by various standard means.
+</p>
 
-<p>This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relavant information.</p>
+<p title="This paragraph says nothing, and angers me">
+This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relavant information.
+</p>
 <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
 </body>
