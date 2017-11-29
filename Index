@@ -7,12 +7,12 @@
 <body>
 
 <h3 title="Oh man, can I have a tooltip? Yes, I can.">Entering data into a listbox</h3>
-<p title="This paragraph actually says something">
+<p title="This paragraph actually says something.">
 The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
 manipulated by various standard means.
 </p>
 
-<p title="This paragraph says nothing, and angers me">
+<p title="This paragraph says nothing, and angers me.">
 This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relavant information.
 </p>
 
