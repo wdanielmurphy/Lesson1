@@ -16,7 +16,8 @@ manipulated by various standard means.
 This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relavant information.
 </p>
 
-<input type="text" id="myText" value=""><br>
+<input type="text" id="myText" value="">
+<br>
 
 <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
