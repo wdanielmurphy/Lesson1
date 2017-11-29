@@ -18,9 +18,6 @@ This is a second paragraph, which should be displayed beneath the first. This pa
 
 <input type="text" id="myText" value="">
 <br>
-<br>
-<br>
-
 <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
 </body>
