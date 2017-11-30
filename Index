@@ -12,13 +12,22 @@ The purpose of this Lesson is to create a way for a user to enter data, and have
 manipulated by various standard means.
 </p>
 
-<p title="This paragraph says nothing, and angers me.">
+<p id="tempOutput" title="This paragraph says nothing, and angers me.">
 This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relevant information.
 </p>
 
-<input type="text" id="myText" value="">
-<br>
-<a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
+<script>
+function itemAdd() {
+    document.getElementById("tempOutput").innerHTML = "Paragraph changed.";
+}
+</script>
+
+<form>
+  Item to add:  <input type="text" name="inputitem" value=""<br><br>
+  <button type="button" onclick="itemAdd()">Add</button>
+</form>
+
+<br> <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
 </body>
 </html>
