@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<!--I don't really know the aesthetics of spacing and formatting yet,
+<!--I don't know the aesthetics of spacing and formatting yet,
 so please offer criticism of formatting errors.
 -->
 
@@ -63,15 +63,18 @@ function drawsomething() {
 var canvas = document.getElementById("resultCanvas");
 var ctx = canvas.getContext("2d");
 var selLen = document.getElementById("itemSelect").length;
+
 if (selLen>0) {
-var y = (100-selLen*10);
-ctx.clearRect(0, 0, canvas.width, canvas.height)
-ctx.moveTo(0,200);
-ctx.moveTo(50,200);
-ctx.lineTo(50,y);
-ctx.lineTo(150,y);
-ctx.lineTo(150,200);
-ctx.stroke();
+var y = (selLen*5);
+var ystart=canvas.height-y;
+var xend=canvas.width/5;
+var shiftamnt=5;
+var xshift=ctx.canvas.width-shiftamnt;
+var imageData = ctx.getImageData(shiftamnt, 0, xshift, ctx.canvas.height);
+ctx.putImageData(imageData, 0, 0);
+ctx.clearRect(xshift, 0, shiftamnt, ctx.canvas.height);
+ctx.fillStyle = "#00A000";
+ctx.fillRect(xshift,ystart,shiftamnt,y);
 }
 }
 </script>
