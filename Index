@@ -6,15 +6,14 @@
 </head>
 <body>
 
-<h3 title="This is a title tooltip, broh.">Entering data into a listbox</h3>
+<h3 title="This is a title tooltip, broh.">Entering data into a listbox, broh</h3>
 
 <p title="This paragraph actually says something.">
-The purpose of this Lesson is to create a way for a user to enter data, and have it populate a listbox, wherein it can be
-manipulated by various standard means.
+Take text from an input box and add it to a listbox, broh.
 </p>
 
 <p id="tempOutput" title="This paragraph says nothing, and angers me.">
-This is a second paragraph, which should be displayed beneath the first. This paragraph contains no relevant information.
+This is a second paragraph, which contains no relevant information, broh.
 </p>
 
 <script>
@@ -24,10 +23,27 @@ function itemAdd() {
 </script>
 
 <form>
-  Item to add:  <input type="text" name="inputitem1" id="inputitem1" value="Initial Value"<br><br>
-  <button type="button" onclick="itemAdd()">Add</button>
-</form>
+  Item to add:  <input type="text" name="inputitem1" id="inputitem1" 
+  value="Initial Value" <br>  
+  <button type="button" onclick="itemInsert()">Insert option</button><br><br>
 
+  <select id="itemSelect" size="8" style="min-width:35%;">
+    <option>Item1</option>
+    <option>Item2</option>
+    <option>Item3</option>
+    <option>Item4</option>
+  </select>
+</form>
+<br>
+
+<script>
+function itemInsert() {
+    var x = document.getElementById("itemSelect");
+    var option = document.createElement("option");
+    option.text = document.getElementById("inputitem1").value;
+    x.add(option);
+}
+</script>
 <br> <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
 </body>
