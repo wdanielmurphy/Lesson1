@@ -28,21 +28,22 @@ function itemInsert() {
     var option = document.createElement("option");
     option.text = itemtext;
     x.add(option);
+    drawsomething();
   }
 }
 
 function itemRemove() {
 	var x = document.getElementById("itemSelect");
     x.remove(x.selectedIndex);
+    drawsomething();
 }
 
 </script>
 
 <form>
   Item to add:  <input type="text" name="inputitem1" id="inputitem1" 
-  value="Initial Value" <br>  
+  value="Initial Value">
   <button type="button" onclick="itemInsert()">Insert This Item</button><br><br>
-
   <select id="itemSelect" size="8" style="min-width:35%;">
     <option>Item1</option>
     <option>Item2</option>
@@ -50,11 +51,32 @@ function itemRemove() {
     <option>Item4</option>
   </select> <br>
   <button type="button" onclick="itemRemove()">Remove Selected Item</button><br><br>
-</form>
-<br>
+</form><br><br>
 
+<canvas id="resultCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
 
-<br> <a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
+<script>
+function drawsomething() {
+var canvas = document.getElementById("resultCanvas");
+var ctx = canvas.getContext("2d");
+var selLen = document.getElementById("itemSelect").length;
+if (selLen>0) {
+var y = (100-selLen*10);
+ctx.clearRect(0, 0, canvas.width, canvas.height)
+ctx.moveTo(0,200);
+ctx.moveTo(50,200);
+ctx.lineTo(50,y);
+ctx.lineTo(150,y);
+ctx.lineTo(150,200);
+ctx.stroke();
+}
+}
+</script>
+
+<br><br><a href="https://www.innerspec.com">Here's Innerspec's homepage.</a>
 
 </body>
 </html>
