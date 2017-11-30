@@ -7,7 +7,7 @@
 <body>
 
 <!--I don't really know the aesthetics of spacing and formatting yet,
-so please advice of any ugliness
+so please offer criticism of formatting errors.
 -->
 
 <h3 title="This is a title tooltip, broh.">Entering some items:</h3>
@@ -22,27 +22,34 @@ For this exercise, I'm going to just use Client-side javascript.
 
 <script>
 function itemInsert() {
-	var itemtext=document.getElementById("inputitem1").value;
-    if (itemtext != "") {
-      var x = document.getElementById("itemSelect");
-      var option = document.createElement("option");
-      option.text = itemtext;
-      x.add(option);
-    }
+  var itemtext=document.getElementById("inputitem1").value;
+  if (itemtext != "") {
+    var x = document.getElementById("itemSelect");
+    var option = document.createElement("option");
+    option.text = itemtext;
+    x.add(option);
+  }
 }
+
+function itemRemove() {
+	var x = document.getElementById("itemSelect");
+    x.remove(x.selectedIndex);
+}
+
 </script>
 
 <form>
   Item to add:  <input type="text" name="inputitem1" id="inputitem1" 
   value="Initial Value" <br>  
-  <button type="button" onclick="itemInsert()">Insert option</button><br><br>
+  <button type="button" onclick="itemInsert()">Insert This Item</button><br><br>
 
   <select id="itemSelect" size="8" style="min-width:35%;">
     <option>Item1</option>
     <option>Item2</option>
     <option>Item3</option>
     <option>Item4</option>
-  </select>
+  </select> <br>
+  <button type="button" onclick="itemRemove()">Remove Selected Item</button><br><br>
 </form>
 <br>
 
